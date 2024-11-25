@@ -113,7 +113,7 @@ fun MyScreenContent(modifier: Modifier = Modifier, navController: NavHostControl
 
                 println(msg)
                 CoroutineScope(Dispatchers.IO).launch {
-                    response = sendChatRequest("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", msg)
+                    response = sendChatRequest("apiKey", msg)
                     MainMenuView.updateResponse(response)
 
                     println(response)
